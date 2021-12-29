@@ -7,18 +7,3 @@ app.use(express.static(__dirname+'/dist/ng-blog'));
 app.get('/',function(req,res){
     res.sendFile(path.join(__dirname+'/dist/ng-blog/index.html'));
 });
-
-"scripts": {
-    "ng": "ng",
-    "start": "node server.js",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "lite": "lite-server",
-    "postinstall": "ng build --prod"
-  }
-  "engines": {
-	"node": "10.14.2",
-    "npm": "6.4.1"
-}
