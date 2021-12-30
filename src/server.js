@@ -6,11 +6,11 @@ const express = require('express');
 const app = express();
 
 // Serve static files
-app.use(express.static(__dirname + '/dist/spoty-xd'));
+app.use(express.static(__dirname + '/dist/spotyxd'));
 
 // Send all requests to index.html
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/spoty-xd/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/spotyxd/index.html'));
 });
 
 // default Heroku port
